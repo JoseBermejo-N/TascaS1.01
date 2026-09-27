@@ -160,3 +160,21 @@ body {
     flex: 1; /* Hace que ambas publicidades midan lo mismo en horizontal */
   }
 }
+
+/*   version movil */
+@media (max-width: 480px) {
+
+  .grid-articulos {
+    
+    grid-template-columns: 1fr; /* 1 columna vertical para los articulos */
+  }
+
+  .sidebar {
+    flex-direction: column; /* Publicidad en vertical en movil */
+  }
+
+  .banner {
+    font-size: 24px;
+    padding: 30px 15px;
+  }
+}
