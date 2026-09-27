@@ -133,3 +133,30 @@ body {
 }
 
 
+/*version tablet*/
+@media (max-width: 768px) {
+
+  /* 1. Cabecera: Apilamos logo, nav y social en vertical */
+  .header {
+    flex-direction: column;
+  }
+
+  .logo, 
+  .nav, 
+  .social {
+    width: 90%;
+  }
+
+  /* 2. Sección Central: El sidebar pasa a estar abajo del contenido principal */
+  .main-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row; /* Coloca la publicidad lado a lado */
+  }
+ /* 3. Publicidad: Pasamos los dos bloques de publicidad a estar en fila horizontal */
+  .publicidad {
+    flex: 1; /* Hace que ambas publicidades midan lo mismo en horizontal */
+  }
+}
