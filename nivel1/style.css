@@ -1,0 +1,135 @@
+body {
+  background-color: #ffffff; 
+  font-family: Arial, sans-serif;
+  padding: 20px 40px;
+}
+
+/* ESTRUCTURA DE CONTENEDORES (Marcos negros de 1200px) */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto 20px auto; 
+  padding: 20px;
+  background-color: #000000; 
+}
+
+/* BLOQUE SUPERIOR */
+.bloque-superior {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header {
+  background-color: #2b3a4a;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  background-color: #e15252;
+  color: black;
+  padding: 15px 20px;
+  min-width: 120px;
+  text-align: left;
+}
+
+.nav-contenedor {
+  flex-grow: 1; 
+  display: flex;
+}
+
+.nav {
+  background-color: #e15252;
+  color: black;
+  padding: 15px 20px; 
+  text-align: left;
+  text-decoration: none;
+  width: 100%;      
+ 
+}
+
+.social {
+  background-color: #e15252;
+  color: black;
+  padding: 15px 20px;
+  min-width: 100px;
+  text-align: left;
+}
+
+.banner-wrapper {
+  background-color: #ff8c00;
+  padding: 20px;
+}
+
+.banner {
+  background-color: #ffd700;
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+/* BLOQUE CENTRAL */
+.main-content {
+  display: flex;
+  gap: 15px;
+}
+
+.seccion-articulos {
+  background-color: #4a4e69;
+  padding: 15px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.grid-articulos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.article {
+  background-color: #1d70b8;
+  color: black;
+  padding: 25px 15px;
+  text-align: left;
+}
+
+.navegacion {
+  background-color: #6c9abf;
+  color: black;
+  padding: 20px 15px;
+  text-align: left;
+}
+
+.sidebar {
+  background-color: #e15252;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.publicidad {
+  background-color: #ffd700;
+  color: black;
+  padding: 25px 15px;
+  text-align: left;
+}
+
+/* BLOQUE INFERIOR */
+.pie {
+  background-color: #f7e987;
+  color: black;
+  padding: 20px 15px;
+  text-align: left;
+}
+
+
