@@ -61,7 +61,7 @@ body {
 
 .banner-wrapper {
   background-color: #ff8c00;
-  padding: 20px;
+  padding: 15px;
 }
 
 .banner {
@@ -132,19 +132,26 @@ body {
   text-align: left;
 }
 
-
-/*version tablet*/
+/* version tablet */
 @media (max-width: 768px) {
 
   /* 1. Cabecera: Apilamos logo, nav y social en vertical */
   .header {
     flex-direction: column;
+    align-items: stretch; /* Fuerza a que los hijos directos ocupen todo el ancho */
   }
 
+  /* Aseguramos que el contenedor del menú también se estire al 100% */
+  .nav-contenedor {
+    width: 100%;
+  }
+
+  /* Hacemos que las tres cajas midan exactamente el 100% de su espacio disponible */
   .logo, 
   .nav, 
   .social {
-    width: 90%;
+    width: 100%;
+    box-sizing: border-box; /* Evita que el padding sume tamaño extra */
   }
 
   /* 2. Sección Central: El sidebar pasa a estar abajo del contenido principal */
@@ -155,11 +162,13 @@ body {
   .sidebar {
     flex-direction: row; /* Coloca la publicidad lado a lado */
   }
- /* 3. Publicidad: Pasamos los dos bloques de publicidad a estar en fila horizontal */
+  
+  /* 3. Publicidad: Pasamos los dos bloques de publicidad a estar en fila horizontal */
   .publicidad {
     flex: 1; /* Hace que ambas publicidades midan lo mismo en horizontal */
   }
 }
+
 
 /*   version movil */
 @media (max-width: 480px) {
